@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem 4rem;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 0.2s ease-in;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.3rem;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.hero {
+  margin-bottom: 5rem;
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(86, 86, 199);
+}
+
+.hero .container {
+  width: 100%;
+  height: 100%;
+  transform: translateY(10%);
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero .container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+}
+
+.hero .container .info img {
+  width: 200px;
+}
+
+.hero .container .info .title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin: 4rem 0;
+}
+
+.hero .container .info .text {
+  font-size: 1.7rem;
+}
+
+.hero .container .info .btn {
+  padding: 1.5rem 2.5rem;
+  margin-top: 6rem;
+  color: white;
+  background-color: rgb(233, 91, 91);
+}
+
+.hero .container .img {
+  animation: bounce 1s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+/* animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.event-info .container .title {
+  text-align: center;
+  margin: 3rem 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 800;
+}
+
+.event-info .container .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-info .container .features .features-grid,
+.event-info .container .features .speakers-grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.event-info .container .features .features-grid i,
+.event-info .container .features .speakers-grid i {
+  font-size: 6rem;
+  color: rgb(86, 86, 199);
+}
+
+.event-info .container .features .features-grid .item,
+.event-info .container .features .speakers-grid .item {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.event-info .container .features .features-grid .item {
+  padding: 4rem;
+  border: none;
+}
+
+.event-info .container .features .features-grid .item .sub-title {
+  margin: 1rem 0;
+}
+
+.event-info .container .features .speakers-grid {
+  gap: 30px;
+}
+
+.event-info .container .features .speakers-grid .item {
+  transition: transform 0.3s ease-in;
+}
+
+.event-info .container .features .speakers-grid .item img {
+  width: 150px;
+}
+
+.event-info .container .features .speakers-grid .item i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin: 0 1rem;
+}
+
+.event-info .container .features .speakers-grid .item .sub-title,
+.event-info .container .features .speakers-grid .item .text {
+  margin: 1rem 0;
+}
+
+.event-info .container .features .speakers-grid .item:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+.price {
+  height: auto;
+  margin: 3rem 0;
+  background-color: rgb(250, 250, 49);
+}
+
+.price .container {
+  height: 100%;
+}
+
+.price .container .title {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 1px 2px 1px black;
+}
+
+.price .container .tickets-grid {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.price .container .tickets-grid .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+}
+
+.price .container .tickets-grid .item .sub-title {
+  font-size: 3rem;
+}
+
+.price .container .tickets-grid .item .number {
+  color: rgb(233, 91, 91);
+  font-size: 4rem;
+}
+
+.price .container .tickets-grid .item .btn {
+  background-color: rgb(233, 91, 91);
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.event-schedule .container .title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.event-schedule .container .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 2rem 0;
+}
+
+.event-schedule .container .nav .nav-item {
+  margin: 0 2px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: rgb(86, 86, 199);
+}
+
+.event-schedule .container .nav .nav-item.active {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
+  color: black;
+}
+
+.event-schedule .container .nav .nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.event-schedule .container span.nav-line {
+  position: relative;
+  bottom: 12px;
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.event-schedule .container .sessions {
+  margin: 7rem 0;
+}
+
+.event-schedule .container .sessions .grid-1,
+.event-schedule .container .sessions .grid-2,
+.event-schedule .container .sessions .grid-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.event-schedule .container .sessions .grid .item {
+  margin: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.event-schedule .container .sessions .grid .item img {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.event-schedule .container .sessions .grid .item span {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+}
+
+.event-schedule .container .sessions .grid .item .sub-title:nth-child(3) {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* footer */
+footer .footer-container {
+  padding: 1rem 3rem;
+}
+
+footer .footer-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+footer .social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 10px;
+}
+
+footer .social .contact,
+footer .social .twitter {
+  width: 100%;
+  height: 100%;
+}
+
+footer .social .contact .title,
+footer .social .twitter .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+footer .social .contact i,
+footer .social .twitter i {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+footer .social .contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin: 2rem 0;
+}
+
+footer .social .contact form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+footer .social .contact form label {
+  font-size: 2rem;
+}
+
+footer .social .contact form input {
+  font-size: 1.5rem;
+  width: 40vw;
+  padding: 1rem 3rem;
+}
+
+footer .social .contact form textarea {
+  font-size: 1.5rem;
+  width: 40vw;
+  padding: 1rem 3rem;
+  text-align: start;
+}
+
+footer .social .contact form .btn {
+  border: none;
+  outline: none;
+  background-color: goldenrod;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+footer .social .twitter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+footer .social .twitter .feed {
+  margin: 5rem 0;
+}
+
+footer .social .twitter .feed .text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer .social .twitter .feed .text span {
+  color: rgb(86, 86, 199);
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+footer .social .twitter .feed .space {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 2rem 0;
+}
+
+footer .extra {
+  margin-top: 1rem;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .extra .text {
+  color: white;
+}
+
+footer .extra .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .extra .nav .nav-item {
+  color: goldenrod;
+  cursor: pointer;
+  margin: 0 1rem;
+}

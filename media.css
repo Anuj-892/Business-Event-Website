@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero .container {
+    transform: translateY(-5%);
+    grid-template-columns: 1fr;
+  }
+
+  .hero .container .info {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero .container .info .title {
+    font-size: 5.7vw;
+    margin: 30px 0;
+  }
+
+  .hero .container .img {
+    display: none;
+  }
+
+  .price .container .title {
+    font-size: 7vw;
+  }
+
+  .event-info .container .features .features-grid,
+  .event-info .container .features .speakers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price .container .tickets-grid {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .price .container .tickets-grid .item {
+    margin: 1rem;
+  }
+
+  .event-schedule .container {
+    padding: 0 1rem;
+  }
+
+  .event-schedule .container .sessions .grid-1,
+  .event-schedule .container .sessions .grid-2,
+  .event-schedule .container .sessions .grid-3 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .event-schedule .container .sessions .grid .item {
+    text-align: center;
+  }
+
+  .event-schedule .container .sessions .grid .item .info .text,
+  .event-schedule .container .sessions .grid .item .info .sub-title {
+    text-align: start;
+  }
+
+  /* footer */
+  footer .social {
+    overflow: hidden;
+    grid-template-columns: 1fr;
+  }
+
+  footer .extra {
+    flex-direction: column;
+  }
+
+  footer .social .contact form {
+    align-items: flex-start;
+  }
+
+  footer .social .contact form .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2;
+  }
+
+  footer .social .contact form input,
+  footer .social .contact form textarea {
+    width: 80vw;
+  }
+
+  footer .extra > * {
+    margin: 5px 0;
+  }
+}
